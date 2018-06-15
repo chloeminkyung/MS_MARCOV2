@@ -2,6 +2,7 @@ This repository is for the MS MARCO http://www.msmarco.org/<br>
 Fixed some bugs and edited original files from https://github.com/dfcf93/MSMARCOV2/tree/master/
 
 
+
 # BiDaF
 
 ## Requirements for BiDaF
@@ -134,8 +135,8 @@ Exception: "{"query_id": 91867, "answers": ["C:\WINDOWS\system32\config\SM Regis
 load_file(p_path_to_reference_file)                                  # ----> Go to ./Data/reference.json
 candidate_no_answer_query_ids = load_file(p_path_to_candidate_file)  # ----> Go to ./Data/candidate.json
 ~~~
-#### Find line caused the error by finding the query_id like e.g. "query\_id": 91867 and fix it to the right format
-#### Most of the time if you put one more \ (slash) or remove the character causing error or if the data is separated into two lines, then you can fix the error by combining the data in one line.
+##### Find line caused the error by finding the query_id like e.g. "query\_id": 91867 and fix it to the right format
+##### Most of the time if you put one more \ (slash) or remove the character causing error or if the data is separated into two lines, then you can fix the error by combining the data in one line.
 
 Do not delete the whole line, then it will cause another error.
 Do not use jupyter to open the file, use other editor like sublime text or atom which can detect the wrong json format.
@@ -224,7 +225,7 @@ rouge_l: 0.46252234746236
 ~~~
 ## Evaluation
 
-#### However, to evaluate our prediction, prediction.json file has to be reformated<br> and Data/candidate.json and Data/reference.json has be generated.<br> Please refer to the MS_MARCO_Edited/data_processing.ipynb#Prediction-data.
+However, to evaluate our prediction, prediction.json file has to be reformated and Data/candidate.json and Data/reference.json has be generated. Please refer to the MS_MARCO_Edited/data_processing.ipynb#Prediction-data.
 
 #### After data processing, Data/candidate.json file structure
 ~~~
