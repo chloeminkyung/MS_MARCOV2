@@ -36,8 +36,7 @@ conda install -c peterjc123 pytorch   # pytorch 0.3.1 (win-64)
 ~~~
 pip install spacy
 ~~~
-
-# then install en_core representation
+then install the model from spacy
 ~~~
 pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-2.0.0/en_core_web_lg-2.0.0.tar.gz
 ~~~
