@@ -85,19 +85,19 @@ and run the following scripts. (same as 4. above)
 ~~~
 python ./scripts/train.py ./experiment ./Data/<chosen training data> --cuda=False
 ~~~
-## Training Senario 1 -- have checkpoint
-#### Check your experiment file and if there is a file called checkpoint without extension (not checkpoint.opt).
+### Training Senario 1 -- have checkpoint
+##### Check your experiment file and if there is a file called checkpoint without extension (not checkpoint.opt).
 
-### a) And you want to resume training,
+#### a) And you want to resume training,
 ~~~
 python ./scripts/train.py ./experiment ./Data/<chosen training data> --cuda=False
 ~~~
-### b) You dont want to resume training,
+#### b) You dont want to resume training,
 ~~~
 python ./scripts/train.py ./experiment ./Data/<chosen training data> --force_restart --cuda=False
 ~~~
-## Training Senario 2 -- do not have checkpoint
-#### Check your experiment file and if there is NO file called checkpoint without extension (not checkpoint.opt).
+### Training Senario 2 -- do not have checkpoint
+##### Check your experiment file and if there is NO file called checkpoint without extension (not checkpoint.opt).
 ~~~
 python ./scripts/train.py ./experiment ./Data/<chosen training data> --cuda=False
 ~~~
