@@ -78,13 +78,13 @@ python scripts/train.py ./experiment ./Data/<chosen training data> --word_rep ./
 
 ## Training
 
-#### Modify BOTH $config.yaml$ file in $./experiment$ folder AND  $./scripts$ file AND ./ file to match your desired paramaters such as training epochs, dropout rate, learning rate etc.
+#### Modify BOTH config.yaml file in ./experiment folder AND  ./scripts file AND ./ file to match your desired paramaters such as training epochs, dropout rate, learning rate etc.
 and run the following scripts. (same as 4. above)
 ~~~
 python ./scripts/train.py ./experiment ./Data/<chosen training data> --cuda=False
 ~~~
 ## Training Senario 1 -- have checkpoint
-#### Check your $./experiment$ file and if there is a file called $checkpoint$ without extension (not $checkpoint.opt$ ).
+#### Check your ./experiment file and if there is a file called checkpoint without extension (not checkpoint.opt).
 
 ### a) And you want to resume training,
 ~~~
@@ -95,7 +95,7 @@ python ./scripts/train.py ./experiment ./Data/<chosen training data> --cuda=Fals
 python ./scripts/train.py ./experiment ./Data/<chosen training data> --force_restart --cuda=False
 ~~~
 ## Training Senario 2 -- do not have checkpoint
-#### Check your $./experiment$ file and if there is NO file called $checkpoint$ without extension (not $checkpoint.opt$ ).
+#### Check your ./experiment file and if there is NO file called checkpoint without extension (not checkpoint.opt).
 ~~~
 python ./scripts/train.py ./experiment ./Data/<chosen training data> --cuda=False
 ~~~
@@ -115,7 +115,7 @@ python scripts/predict.py ./experiment ./Data/<chosen data for prediction> predi
 ### Before evaluating the prediction,
 #### MS_marco/data_processing.ipynb#Prediction-data
 
-#### Then you should be in the $./Evaluation$ folder and run following script
+#### Then you should be in the ./Evaluation folder and run following script
 ~~~
 ./run.sh ../Data/reference.json ../Data/candidate.json./run.sh ../Data/<generated reference file> ../Data/<generated candidate file>
 ~~~
@@ -129,7 +129,7 @@ Exception: "{"query_id": 91867, "answers": ["C:\WINDOWS\system32\config\SM Regis
 load_file(p_path_to_reference_file)                                  # ----> Go to ./Data/reference.json
 candidate_no_answer_query_ids = load_file(p_path_to_candidate_file)  # ----> Go to ./Data/candidate.json
 ~~~
-#### Find line caused the error by finding the query_id like $"query\_id": 91867$ and fix it to the right format
+#### Find line caused the error by finding the query_id like e.g. "query\_id": 91867 and fix it to the right format
 #### Most of the time if you put one more \ (slash) or remove the character causing error or if the data is separated into two lines, then you can fix the error by combining the data in one line.
 
 Do not delete the whole line, then it will cause another error.
@@ -209,7 +209,7 @@ rouge_l: 0.46252234746236
 ~~~
 ## Prediction
 
-#### After prediction, $./prediction.json$ file should look like this
+#### After prediction, ./prediction.json file should look like this
 ~~~
 '10190' 'The average cost of a set of brake pads is $ 25–75 .' 0 50
 '56809' 'This math worksheet will help give your Preschool , Kindergarten , or 1st grader some extra practice writing their numbers from 1-20 .' 0 131
@@ -219,9 +219,9 @@ rouge_l: 0.46252234746236
 ~~~
 ## Evaluation
 
-#### However, to evaluate our prediction, $./prediction.json$ file has to be reformated and $./Data/candidate.json$ and $./Data/reference.json$ has be generated. Please refer to the MS_marco/data_processing.ipynb#Prediction-data.
+#### However, to evaluate our prediction, ./prediction.json file has to be reformated and ./Data/candidate.json and ./Data/reference.json has be generated. Please refer to the MS_marco/data_processing.ipynb#Prediction-data.
 
-#### After data processing, $./Data/candidate.json$ file structure
+#### After data processing, ./Data/candidate.json file structure
 ~~~
 {"query_id": 10190, "answers": ["The average cost of a set of brake pads is $ 25–75 ."]}
 {"query_id": 56809, "answers": ["This math worksheet will help give your Preschool , Kindergarten , or 1st grader some extra practice writing their numbers from 1-20 ."]}
@@ -229,7 +229,7 @@ rouge_l: 0.46252234746236
 ...
 ...
 ~~~
-#### $./Data/reference.json$ file structure should be like this, same as the $./Data/candidate.json$ file
+#### ./Data/reference.json file structure should be like this, same as the ./Data/candidate.json file
 ~~~
 {"query_id": 10190, "answers": ["The average cost of a set of brake pads is $25–75. Where rotors are $75–150 a piece."]}
 {"query_id": 56809, "answers": ["Kindergarten, or 1st grader some extra practice writing their numbers from 1-20."]}
