@@ -113,7 +113,7 @@ python scripts/predict.py ./experiment ./Data/<chosen data for prediction> predi
 ## Evaluation
 
 ### Before evaluating the prediction,
-#### http://localhost:8888/notebooks/MS_marco/data_processing.ipynb#Prediction-data.
+#### MS_marco/data_processing.ipynb#Prediction-data
 
 #### Then you should be in the $./Evaluation$ folder and run following script
 ~~~
