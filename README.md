@@ -118,8 +118,7 @@ python scripts/predict.py ./experiment ./Data/<chosen data for prediction> predi
 ~~~
 ## Evaluation
 
-### Before evaluating the prediction,
-#### MS_MARCO_Edited/data_processing.ipynb#Prediction-data
+Before evaluating the prediction, check MS_MARCO_Edited/data_processing.ipynb#Prediction-data.
 
 #### Then you should be in the Evaluation folder and run following script
 ~~~
