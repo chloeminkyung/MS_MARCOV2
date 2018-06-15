@@ -5,7 +5,7 @@ Fixed some bugs and edited original files from https://github.com/dfcf93/MSMARCO
 
 # BiDaF
 
-## Requirements for BiDaF
+### Requirements
 ~~~
 Python 3.5
 CUDA 9.0      # when usng GPU
