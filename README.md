@@ -107,7 +107,9 @@ This will load the model and data and predict for all answered questions where t
 ~~~
 python scripts/predict.py ./experiment ./Data/<chosen data for prediction> prediction.json --cuda=False  # cpu
 python scripts/predict.py ./experiment ./Data/<chosen data for prediction> prediction.json --cuda=True   # gpu
+~~~
 To generate new embeddings from your embedding file instead instead of using random embeddings use the following command. (optional)
+~~~
 python scripts/predict.py ./experiment ./Data/<chosen data for prediction> prediction.json --word_rep ./Data/<chosen word embedding> --cuda=False
 ~~~
 ## Evaluation
