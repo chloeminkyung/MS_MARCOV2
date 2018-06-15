@@ -1,5 +1,5 @@
-###### This repository is for the MS MARCO http://www.msmarco.org/
-###### Fixed some bugs and edited original files from https://github.com/dfcf93/MSMARCOV2/tree/master/
+This repository is for the MS MARCO http://www.msmarco.org/<br>
+Fixed some bugs and edited original files from https://github.com/dfcf93/MSMARCOV2/tree/master/
 
 
 # BiDaF
@@ -78,7 +78,9 @@ python scripts/train.py ./experiment ./Data/<chosen training data> --word_rep ./
 
 ## Training
 
-#### Modify BOTH config.yaml file in experiment folder AND scripts file AND MS_MARCO_Edited file to match your desired paramaters such as training epochs, dropout rate, learning rate etc.
+#### Modify config.yaml file<br>
+##### in experiment folder AND scripts file AND MS_MARCO_Edited file to match your desired paramaters such as training epochs, dropout rate, learning rate etc.
+
 and run the following scripts. (same as 4. above)
 ~~~
 python ./scripts/train.py ./experiment ./Data/<chosen training data> --cuda=False
@@ -103,7 +105,8 @@ python ./scripts/train.py ./experiment ./Data/<chosen training data> --cuda=Fals
 
 #### To generate a prediction file run the command below.
 
-This will load the model and data and predict for all answered questions where the answer is a span. Any new tokens/char will get a random embedding.
+This will load the model and data and predict for all answered questions where the answer is a span.<br>
+Any new tokens/char will get a random embedding.
 ~~~
 python scripts/predict.py ./experiment ./Data/<chosen data for prediction> prediction.json --cuda=False  # cpu
 python scripts/predict.py ./experiment ./Data/<chosen data for prediction> prediction.json --cuda=True   # gpu
@@ -221,7 +224,7 @@ rouge_l: 0.46252234746236
 ~~~
 ## Evaluation
 
-#### However, to evaluate our prediction, prediction.json file has to be reformated and Data/candidate.json and Data/reference.json has be generated. Please refer to the MS_MARCO_Edited/data_processing.ipynb#Prediction-data.
+#### However, to evaluate our prediction, prediction.json file has to be reformated<br> and Data/candidate.json and Data/reference.json has be generated.<br> Please refer to the MS_MARCO_Edited/data_processing.ipynb#Prediction-data.
 
 #### After data processing, Data/candidate.json file structure
 ~~~
