@@ -37,7 +37,7 @@ pip install https://github.com/explosion/spacy-models/releases/download/en_core_
 ~~~
 #### Useful conda commandline
 ~~~
-conda info --envs                                   # list of virtual env list you have created
+conda info --envs                     # list of virtual env list you have created
 conda env list
 conda list                            # list of packages in the env
 ~~~
