@@ -3,8 +3,8 @@
 ### Requirements
 ~~~
 Python 3.5
-CUDA 9.0      # when usng GPU
-Pytorch       # prefer version > 0.3 
+CUDA 9.0                 # when usng GPU
+Pytorch 0.3.1.post2      # prefer version > 0.3 
 h5py
 nltk
 spacy
