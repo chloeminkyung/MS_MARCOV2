@@ -117,7 +117,8 @@ Before evaluating the prediction, check MS_MARCO_Edited/data_processing.ipynb#Pr
 
 #### Then you should be in the Evaluation folder and run following script
 ~~~
-./run.sh ../Data/reference.json ../Data/candidate.json./run.sh ../Data/<generated reference file> ../Data/<generated candidate file>
+./run.sh ../Data/reference.json ../Data/candidate.json
+./run.sh ../Data/<generated reference file> ../Data/<generated candidate file>
 ~~~
 ### Sometimes, there will be an error like,
 ~~~
